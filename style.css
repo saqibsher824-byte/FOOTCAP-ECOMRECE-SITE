@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+    --mc--: rgb(255, 79, 66);
+    --fm--:"Josefin Sans",
+        sans-serif;
+}
+
+.actives {
+    background-color: rgba(255, 79, 66, 0.842) !important;
+
+}
+
+.btna:hover {
+    background-color: rgba(255, 79, 66, 0.842) !important;
+}
+
+.btnb:hover {
+    color: rgba(255, 79, 66, 0.842) !important;
+}
+
+.navbar-nav li a {
+    text-transform: capitalize;
+    margin: 0 12px;
+}
+
+.navbar-nav li a:hover {
+    color: var(--mc--) !important;
+    text-transform: capitalize;
+}
+
+.color-c:hover {
+    color: var(--mc--);
+}
+
+.hide {
+    display: none;
+    opacity: 1;
+}
+
+.off li {
+    list-style: none;
+}
+
+/* hero */
+
+.hero {
+    background-image: url(assets/images/hero-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    margin: 100px 0 0 0 !important;
+
+
+}
+
+.b:hover .a {
+    transform: scale(1.27);
+    transition: transform 1s ease;
+
+}
+
+
+.cola {
+    background-image: url(assets/images/collection-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 31%;
+}
+
+.colb {
+    background-image: url(assets/images/collection-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 31%;
+}
+
+.colc {
+    background-image: url(assets/images/collection-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 31%;
+}
+
+.icons {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+}
+.btan:hover{
+    text-decoration: none!important;
+
+}
+
+.icons :hover {
+    color: var(--mc--) !important;
+
+}
+
+.b:hover .icons {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 9999;
+    /* position: relative; */
+}
+.left {
+    background-image: url(assets/images/cta-1.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 49%;
+}
+.left1 {
+    background-image: url(assets/images/special-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  
+}
+.right {
+    background-image: url(assets/images/cta-2.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 49%;
+}
+.scroll-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 40px 0 20px 0;
+    background-color: white;
+   
+}
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.left-btn {
+    left: 20px;
+}
+
+.right-btn {
+    right: 20px;
+}
+.bg-font:hover{
+    background-color: var(--mc--)!important;
+}
+.aftr{
+    position: relative;
+    
+}
+.aftr::before {
+    content: "";
+  
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--mc--);
+    
+}
+body{
+    overflow-x: hidden !important;
+}
+
+
+.animate{
+ 
+    transform: translateX(1100px);
+    transition: 1.5s ease;
+}
+.animat {
+
+    transform: translateX(-1100px);
+    transition: 1.5s ease;
+}
+.anima {
+
+    transform: translateX(1100px);
+    transition: 1.5s ease;
+}
+.nim {
+
+    transform: translateY(1100px);
+    transition: 1.5s ease;
+}
+.f {
+
+    transform: translateY(1100px);
+    transition: 1.5s ease;
+}
+.l{
+    transform: translateX(1100px);
+        transition: 1.5s ease;
+}
+.re {
+    transform: translateX(-1100px);
+    transition: 1.5s ease;
+}
+
+/* hero */
+/* meadia */
+@media (min-width:992px) {
+    .navbar-nav {
+        display: flex !important;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+
+}
+
+@media (max-width:992px) {
+
+    .hide {
+        display: block !important;
+
+    }
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .r {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .r > div {
+        width: 80vw;
+    }
+    .r > .col-md-3{
+        width: 80vw!important;
+    }
+    .r .abi{
+       width: 60vw!important;
+       display: flex!important;
+       justify-content: center!important;
+       align-items: center;
+
+    }
+           .r .abi img {
+               width: 60vw!important;
+               object-fit: cover!important;
+           }
+           .left1{
+            width: 50%!important;
+        
+            margin: auto;
+        }
+        .right1{
+               width: 100%!important;
+
+           }
+        }
+    
+        @media (max-width: 768px) {
+            .b {
+                width: 85vw !important;
+                /* one product takes most of the width */
+            }
+    
+            .abi {
+                width: 100% !important;
+                height: 40vh !important;
+                /* shorter height for mobile */
+            }
+    
+            .carousel .d-flex {
+                flex-direction: row !important;
+                /* stack products vertically if needed */
+                align-items: center;
+                gap: 2rem;
+            }
+    
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 10px !important;
+            }
+        }
+.form-control:hover,
+.form-control:focus {
+    border-color: inherit !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+
+@media (max-width:768px) {
+
+    .hide {
+        display: block !important;
+
+    }
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .r {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .hide {
+        display: block !important;
+
+    }
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+    .r {
+        flex-wrap: wrap;
+    }
+}
